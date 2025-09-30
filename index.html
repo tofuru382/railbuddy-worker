@@ -62,7 +62,7 @@
         const resp = await fetch("https://api.tomoharu-furuya.workers.dev", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ model: "gpt-4o-mini", messages })
+          body: JSON.stringify({ model: "gpt-5", messages })
         });
         const data = await resp.json();
         if (data.choices && data.choices[0].message) {
